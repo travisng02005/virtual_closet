@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Closeted</title>
+
+  <style>
+    @font-face {
+      font-family: "Playbus Bays GT";
+      src: url("fonts/PlaybusBaysGTDemo.ttf") format("truetype");
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      font-family: "Playbus Bays GT", sans-serif;
+      color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* LEFT NAV */
+    .left-nav {
+      position: absolute;
+      top: 10%;
+      left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .left-nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 35px;
+      transition: opacity 0.2s ease;
+    }
+
+    .left-nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* RIGHT NAV */
+    .right-nav {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+    }
+
+    .right-nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 35px;
+      transition: opacity 0.2s ease;
+    }
+
+    .right-nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* CENTER TITLE */
+    .center-title {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .center-title h1 {
+      font-size: 48px;
+      letter-spacing: 3px;
+    }
+
+    .center-title h2 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    .center-title h3 {
+      font-size: 20px;
+      color: #000000;
+      font-weight: normal;
+    }
+
+		/* BEAR IMAGE */
+		.bottom-art {
+			position: absolute;
+			bottom: 0px;           /* distance from the bottom */
+			left: 51%;              /* center horizontally */
+			transform: translateX(-50%); /* perfectly center */
+			width: 1100px;           /* adjust size as needed */
+			opacity: 0.9;           /* optional: soften lines slightly */
+		}
+  </style>
+</head>
+
+<body>
+  <!-- Left navigation -->
+  <nav class="left-nav">
+    <a href="closet.html" target="_blank">Closet</a>
+    <a href="outfits.html" target="_blank">Saved Fits</a>
+    <a href="upload.html" target="_blank">Add New Pieces</a>
+  </nav>
+
+  <!-- Right navigation -->
+  <nav class="right-nav">
+    <a href="https://www.linkedin.com/in/travis-ngo-cse/" target="_blank">Linked In</a>
+  </nav>
+
+  <!-- Center title -->
+  <div class="center-title">
+    <h1>CLOSETED</h1>
+    <h2>Your Virtual Closet</h2>
+    <h3>Never forget your fits again</h3>
+  </div>
+
+  <!-- Page image -->
+	<img src="images/main_page.png" class="bottom-art" alt="Sock Cat">
+</body>
+</html>
